@@ -1,0 +1,64 @@
+# ===================================================================
+# Standard iOS/macOS/Swift .gitignore file
+# Generated from https://www.toptal.com/developers/gitignore/api/swift,xcode
+# ===================================================================
+
+# User-specific files
+*.xcuserdatad
+*.user
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+xcuserdata/
+*.xccheckout
+*.moved-aside
+
+# Build generated
+build/
+Build/
+DerivedData/
+*.app
+*.ipa
+*.dSYM/
+*.xcarchive
+
+# Swift Package Manager
+.build/
+Packages/
+*.swiftdeps
+*.swiftmodule
+.swiftpm/
+
+# Dependency managers
+#
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build
+Carthage/Checkouts
+
+# Test results and coverage
+*.xctestresult
+*.xcresult
+*.profraw
+*.xccovreport
+*.xccovarchivedata
+coverage/
+
+# Local settings
+# IMPORTANT: If you store sensitive data (API keys, passwords) in a file,
+# add its name here. For example:
+# Secrets.xcconfig
+# Keys.plist
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db

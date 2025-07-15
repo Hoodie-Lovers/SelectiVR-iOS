@@ -1,32 +1,20 @@
-//
-//  SelectiVRApp.swift
-//  SelectiVR
-//
-//  Created by byeoungjik on 6/15/25.
-//
+/*
+See the LICENSE.txt file for this sample’s licensing information.
+
+Abstract:
+The single entry point of the app.
+*/
 
 import SwiftUI
-import SwiftData
 
 @main
 struct SelectiVRApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
+    static let subsystem: String = "com.example.apple-samplecode.guided-capture-sample"
 
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(AppDataModel.instance)
         }
-        .modelContainer(sharedModelContainer)
     }
 }

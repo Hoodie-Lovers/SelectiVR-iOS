@@ -1,7 +1,4 @@
-# ===================================================================
-# Standard iOS/macOS/Swift .gitignore file
-# Generated from https://www.toptal.com/developers/gitignore/api/swift,xcode
-# ===================================================================
+
 
 # User-specific files
 *.xcuserdatad
@@ -12,6 +9,11 @@
 xcuserdata/
 *.xccheckout
 *.moved-aside
+**/*.xcodeproj/project.xcworkspace/*
+!**/*.xcodeproj/project.xcworkspace/xcshareddata
+
+**/*.xcodeproj/project.xcworkspace/xcshareddata/*
+!**/*.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
 
 # Build generated
 build/

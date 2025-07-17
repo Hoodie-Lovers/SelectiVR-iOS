@@ -1,0 +1,22 @@
+//
+//  Debug.xcconfig
+//  SelectiVR
+//
+//  Created by byeoungjik on 7/17/25.
+//  Copyright © 2025 Apple. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+// Google OAuth Client ID for Development
+GIDClientID = 589602177745-p6g4dmsg0eqjai7u0aajif43ga61ckrq.apps.googleusercontent.com
+GOOGLE_REVERSED_CLIENT_ID = com.googleusercontent.apps.589602177745-p6g4dmsg0eqjai7u0aajif43ga61ckrq
+
+// The `SAMPLE_CODE_DISAMBIGUATOR` configuration is to make it easier to build
+// and run a sample code project. Once you set your project's development team,
+// you'll have a unique bundle identifier. This is because the bundle identifier
+// is derived based on the 'SAMPLE_CODE_DISAMBIGUATOR' value. Do not use this
+// approach in your own projects—it's only useful for sample code projects because
+// they are frequently downloaded and don't have a development team set.
+SAMPLE_CODE_DISAMBIGUATOR=${DEVELOPMENT_TEAM}

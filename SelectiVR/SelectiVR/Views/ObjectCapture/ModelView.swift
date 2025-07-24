@@ -14,9 +14,21 @@ private let logger = Logger(subsystem: SelectiVRApp.subsystem, category: "ModelV
 struct ModelView: View {
     let modelFile: URL
     let endCaptureCallback: () -> Void
-
+    @State private var isShowingUploadView = false
+    
     var body: some View {
         ARQuickLookController(modelFile: modelFile, endCaptureCallback: endCaptureCallback)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Upload") {
+                        isShowingUploadView = true
+                        print("업로드 버튼 클릭")
+                    }
+                }
+            }
+            .sheet(isPresented: $isShowingUploadView) {
+                ModelUploadView(modelFile: self.modelFile)
+            }
     }
 }
 

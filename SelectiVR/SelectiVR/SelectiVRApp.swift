@@ -15,12 +15,17 @@ struct SelectiVRApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginView()
-                .environment(AppDataModel.instance)
-                .environmentObject(authService) // 뷰 계층에 인증 서비스 주입
-                .onOpenURL { url in
-                    GIDSignIn.sharedInstance.handle(url)
+            Group {
+                if authService.isLoggedIn {
+                    ContentView()
+                } else {
+                    LoginView()
                 }
+            }
+            .onOpenURL { url in
+                GIDSignIn.sharedInstance.handle(url)
+            }
+            .environmentObject(authService)
         }
     }
 }

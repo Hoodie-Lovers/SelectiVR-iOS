@@ -49,6 +49,9 @@
 		884457B12E278EB0008A7123 /* GoogleAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884457B02E278EAC008A7123 /* GoogleAuthService.swift */; };
 		884457E82E287E37008A7123 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 884457E72E287E37008A7123 /* GoogleSignIn */; };
 		884457EA2E287E37008A7123 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 884457E92E287E37008A7123 /* GoogleSignInSwift */; };
+		884457EC2E294B0B008A7123 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884457EB2E294A12008A7123 /* KeyChainService.swift */; };
+		884457EE2E294B32008A7123 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884457ED2E294B27008A7123 /* NetworkService.swift */; };
+		884457F02E294BE5008A7123 /* ModelUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884457EF2E294BE5008A7123 /* ModelUploadView.swift */; };
 		8DB8EB4A2C095965004F3E19 /* AppDataModel+Orbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8EB492C09595F004F3E19 /* AppDataModel+Orbit.swift */; };
 		8DB8EB4C2C0A46ED004F3E19 /* BottomOverlayButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8EB4B2C0A46E4004F3E19 /* BottomOverlayButtons.swift */; };
 		8DB8EB4E2C0A5945004F3E19 /* TopOverlayButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8EB4D2C0A5940004F3E19 /* TopOverlayButtons.swift */; };
@@ -103,6 +106,9 @@
 		884457B02E278EAC008A7123 /* GoogleAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthService.swift; sourceTree = "<group>"; };
 		884457CF2E285989008A7123 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		884457D12E2859AD008A7123 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		884457EB2E294A12008A7123 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
+		884457ED2E294B27008A7123 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		884457EF2E294BE5008A7123 /* ModelUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUploadView.swift; sourceTree = "<group>"; };
 		8DB8EB492C09595F004F3E19 /* AppDataModel+Orbit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDataModel+Orbit.swift"; sourceTree = "<group>"; };
 		8DB8EB4B2C0A46E4004F3E19 /* BottomOverlayButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomOverlayButtons.swift; sourceTree = "<group>"; };
 		8DB8EB4D2C0A5940004F3E19 /* TopOverlayButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopOverlayButtons.swift; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 		64A07E0F2BFE9C7E00FDE113 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				64A07E022BFE9C7700FDE113 /* ContentView.swift */,
 				884457A92E26D109008A7123 /* ObjectCapture */,
 				884457AC2E26D22A008A7123 /* Auth */,
 			);
@@ -203,7 +210,6 @@
 				8DB8EB4D2C0A5940004F3E19 /* TopOverlayButtons.swift */,
 				8DB8EB4B2C0A46E4004F3E19 /* BottomOverlayButtons.swift */,
 				64A07E012BFE9C7700FDE113 /* CapturePrimaryView.swift */,
-				64A07E022BFE9C7700FDE113 /* ContentView.swift */,
 				64A07E032BFE9C7700FDE113 /* FeedbackView.swift */,
 				64A07E042BFE9C7700FDE113 /* HelpPageView.swift */,
 				8DB8EB4F2C0A601C004F3E19 /* TutorialPageView.swift */,
@@ -216,6 +222,7 @@
 				64A07E0B2BFE9C7700FDE113 /* ProgressBarView.swift */,
 				64A07E0C2BFE9C7700FDE113 /* ReconstructionPrimaryView.swift */,
 				64A07E0D2BFE9C7700FDE113 /* TutorialVideoView.swift */,
+				884457EF2E294BE5008A7123 /* ModelUploadView.swift */,
 			);
 			path = ObjectCapture;
 			sourceTree = "<group>";
@@ -223,6 +230,8 @@
 		884457AA2E26D173008A7123 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				884457ED2E294B27008A7123 /* NetworkService.swift */,
+				884457EB2E294A12008A7123 /* KeyChainService.swift */,
 				884457B02E278EAC008A7123 /* GoogleAuthService.swift */,
 				64A07DCC2BFE7CDA00FDE113 /* AppDataModel.swift */,
 				64A07DCD2BFE7CDA00FDE113 /* CaptureFolderManager.swift */,
@@ -360,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A07DE42BFE7CDA00FDE113 /* OnboardingTutorialView+LocalizedString.swift in Sources */,
+				884457F02E294BE5008A7123 /* ModelUploadView.swift in Sources */,
 				64A07DE52BFE7CDA00FDE113 /* OnboardingStateMachine.swift in Sources */,
 				64A07DE62BFE7CDA00FDE113 /* AppDataModel.swift in Sources */,
 				64A07DE82BFE7CDA00FDE113 /* SelectiVRApp.swift in Sources */,
@@ -386,6 +396,8 @@
 				64A07E1C2BFE9E0F00FDE113 /* OnboardingTutorialView.swift in Sources */,
 				64A07E1D2BFE9E0F00FDE113 /* OnboardingButtonView.swift in Sources */,
 				64A07DF52BFE7CDA00FDE113 /* UntilProcessingCompleteFilter.swift in Sources */,
+				884457EC2E294B0B008A7123 /* KeyChainService.swift in Sources */,
+				884457EE2E294B32008A7123 /* NetworkService.swift in Sources */,
 				64A07DF72BFE7CDA00FDE113 /* CaptureFolderManager.swift in Sources */,
 				64A07DF82BFE7CDA00FDE113 /* FeedbackMessages.swift in Sources */,
 			);

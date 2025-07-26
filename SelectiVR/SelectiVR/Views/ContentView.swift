@@ -1,9 +1,9 @@
 /*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-The top-level app view.
-*/
+ See the LICENSE.txt file for this sample’s licensing information.
+ 
+ Abstract:
+ The top-level app view.
+ */
 
 import SwiftUI
 import os
@@ -13,21 +13,29 @@ private let logger = Logger(subsystem: SelectiVRApp.subsystem, category: "Conten
 struct ContentView: View {
     
     @EnvironmentObject private var authService: GoogleAuthService
-
+    
+    init() {
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .black // 탭 바의 배경색을 검은색으로 지정
+        UITabBar.appearance().standardAppearance = appearance
+        UITabBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
     var body: some View {
         TabView {
             PrimaryView()
                 .tabItem {
-                    Label("메인", systemImage: "ark.fill")
+                    Label("메인", systemImage: "camera.fill")
                 }
                 .environment(AppDataModel.instance)
             
-            // [추가] 로그아웃 버튼을 포함한 설정 탭
             SettingsView()
                 .tabItem {
                     Label("설정", systemImage: "gear")
                 }
         }
+        .tint(.white)
         .onAppear {
             UIApplication.shared.isIdleTimerDisabled = true
             logger.log("ContentView appeared. Idle timer disabled.")

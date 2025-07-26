@@ -206,19 +206,15 @@
 		884457A92E26D109008A7123 /* ObjectCapture */ = {
 			isa = PBXGroup;
 			children = (
-				64A07E002BFE9C7700FDE113 /* CaptureOverlayView.swift */,
-				8DB8EB4D2C0A5940004F3E19 /* TopOverlayButtons.swift */,
-				8DB8EB4B2C0A46E4004F3E19 /* BottomOverlayButtons.swift */,
-				64A07E012BFE9C7700FDE113 /* CapturePrimaryView.swift */,
-				64A07E032BFE9C7700FDE113 /* FeedbackView.swift */,
+				88ADCFB22E33D3D1005A9908 /* Capture */,
 				64A07E042BFE9C7700FDE113 /* HelpPageView.swift */,
+				64A07E032BFE9C7700FDE113 /* FeedbackView.swift */,
 				8DB8EB4F2C0A601C004F3E19 /* TutorialPageView.swift */,
 				64A07E052BFE9C7700FDE113 /* ModelView.swift */,
 				64A07E062BFE9C7700FDE113 /* OnboardingButtonView.swift */,
 				64A07E072BFE9C7700FDE113 /* OnboardingTutorialView.swift */,
 				64A07E082BFE9C7700FDE113 /* OnboardingView.swift */,
 				64A07E092BFE9C7700FDE113 /* PlayerView.swift */,
-				64A07E0A2BFE9C7700FDE113 /* PrimaryView.swift */,
 				64A07E0B2BFE9C7700FDE113 /* ProgressBarView.swift */,
 				64A07E0C2BFE9C7700FDE113 /* ReconstructionPrimaryView.swift */,
 				64A07E0D2BFE9C7700FDE113 /* TutorialVideoView.swift */,
@@ -259,6 +255,18 @@
 				884457A72E26D0A2008A7123 /* LoginView.swift */,
 			);
 			path = Auth;
+			sourceTree = "<group>";
+		};
+		88ADCFB22E33D3D1005A9908 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				8DB8EB4B2C0A46E4004F3E19 /* BottomOverlayButtons.swift */,
+				64A07E012BFE9C7700FDE113 /* CapturePrimaryView.swift */,
+				64A07E002BFE9C7700FDE113 /* CaptureOverlayView.swift */,
+				64A07E0A2BFE9C7700FDE113 /* PrimaryView.swift */,
+				8DB8EB4D2C0A5940004F3E19 /* TopOverlayButtons.swift */,
+			);
+			path = Capture;
 			sourceTree = "<group>";
 		};
 		BE1581CA0394362733D93FF3 /* LICENSE */ = {

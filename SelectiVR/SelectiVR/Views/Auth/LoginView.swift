@@ -41,7 +41,7 @@ struct LoginView: View {
                     // (로그인 성공 시 ContentView가 알아서 메인 화면으로 전환할 것입니다.)
                     
                     // GoogleSignInSwift에서 제공하는 공식 로그인 버튼
-                    GoogleSignInButton(viewModel: GoogleSignInButtonViewModel(scheme: .dark, style: .wide, state: .normal)) {
+                    GoogleSignInButton(viewModel: GoogleSignInButtonViewModel(scheme: .light, style: .standard, state: .normal)) {
                         // [개선] 비동기 작업을 처리하고 에러를 핸들링하기 위해 Task를 사용합니다.
                         handleSignIn()
                     }

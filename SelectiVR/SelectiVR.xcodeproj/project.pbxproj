@@ -45,6 +45,13 @@
 		64C12FD22BFEB4A4002D3E7E /* ScanPasses-iPad-FixedHeight-1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 64C12FC02BFEB4A4002D3E7E /* ScanPasses-iPad-FixedHeight-1.mp4 */; };
 		64C12FD32BFEB4A4002D3E7E /* ScanPasses-iPad-FixedHeight-unflippable-low.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 64C12FC42BFEB4A4002D3E7E /* ScanPasses-iPad-FixedHeight-unflippable-low.mp4 */; };
 		64F43E522BFEB06E0069D4F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64F43E512BFEB06E0069D4F3 /* Assets.xcassets */; };
+		884457A82E26D0A2008A7123 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884457A72E26D0A2008A7123 /* LoginView.swift */; };
+		884457B12E278EB0008A7123 /* GoogleAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884457B02E278EAC008A7123 /* GoogleAuthService.swift */; };
+		884457E82E287E37008A7123 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 884457E72E287E37008A7123 /* GoogleSignIn */; };
+		884457EA2E287E37008A7123 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 884457E92E287E37008A7123 /* GoogleSignInSwift */; };
+		884457EC2E294B0B008A7123 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884457EB2E294A12008A7123 /* KeyChainService.swift */; };
+		884457EE2E294B32008A7123 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884457ED2E294B27008A7123 /* NetworkService.swift */; };
+		884457F02E294BE5008A7123 /* ModelUploadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884457EF2E294BE5008A7123 /* ModelUploadView.swift */; };
 		8DB8EB4A2C095965004F3E19 /* AppDataModel+Orbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8EB492C09595F004F3E19 /* AppDataModel+Orbit.swift */; };
 		8DB8EB4C2C0A46ED004F3E19 /* BottomOverlayButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8EB4B2C0A46E4004F3E19 /* BottomOverlayButtons.swift */; };
 		8DB8EB4E2C0A5945004F3E19 /* TopOverlayButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB8EB4D2C0A5940004F3E19 /* TopOverlayButtons.swift */; };
@@ -95,11 +102,17 @@
 		64C12FC82BFEB4A4002D3E7E /* ScanPasses-iPhone-FixedHeight-unflippable-high.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ScanPasses-iPhone-FixedHeight-unflippable-high.mp4"; sourceTree = "<group>"; };
 		64C12FC92BFEB4A4002D3E7E /* ScanPasses-iPhone-FixedHeight-unflippable-low.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ScanPasses-iPhone-FixedHeight-unflippable-low.mp4"; sourceTree = "<group>"; };
 		64F43E512BFEB06E0069D4F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		884457A72E26D0A2008A7123 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		884457B02E278EAC008A7123 /* GoogleAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuthService.swift; sourceTree = "<group>"; };
+		884457CF2E285989008A7123 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		884457D12E2859AD008A7123 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		884457EB2E294A12008A7123 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
+		884457ED2E294B27008A7123 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		884457EF2E294BE5008A7123 /* ModelUploadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUploadView.swift; sourceTree = "<group>"; };
 		8DB8EB492C09595F004F3E19 /* AppDataModel+Orbit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDataModel+Orbit.swift"; sourceTree = "<group>"; };
 		8DB8EB4B2C0A46E4004F3E19 /* BottomOverlayButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomOverlayButtons.swift; sourceTree = "<group>"; };
 		8DB8EB4D2C0A5940004F3E19 /* TopOverlayButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopOverlayButtons.swift; sourceTree = "<group>"; };
 		8DB8EB4F2C0A601C004F3E19 /* TutorialPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageView.swift; sourceTree = "<group>"; };
-		CD61D7696BF8262EF4D5A1D7 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = ../Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
 		F9432A612C17AB6F00D540FD /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		F9432A632C17AC0500D540FD /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +122,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884457E82E287E37008A7123 /* GoogleSignIn in Frameworks */,
+				884457EA2E287E37008A7123 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,16 +155,9 @@
 			children = (
 				64A07E202BFEA1F100FDE113 /* Info.plist */,
 				64A07E0F2BFE9C7E00FDE113 /* Views */,
-				64A07DCC2BFE7CDA00FDE113 /* AppDataModel.swift */,
-				8DB8EB492C09595F004F3E19 /* AppDataModel+Orbit.swift */,
-				64A07DCD2BFE7CDA00FDE113 /* CaptureFolderManager.swift */,
-				64A07DD12BFE7CDA00FDE113 /* FeedbackMessages.swift */,
+				884457AA2E26D173008A7123 /* ViewModel */,
+				884457AB2E26D19E008A7123 /* Model */,
 				64A07DD32BFE7CDA00FDE113 /* SelectiVRApp.swift */,
-				64A07DD72BFE7CDA00FDE113 /* OnboardingButtonView+LocalizedString.swift */,
-				64A07DD82BFE7CDA00FDE113 /* OnboardingStateMachine.swift */,
-				64A07DDA2BFE7CDA00FDE113 /* OnboardingTutorialView+LocalizedString.swift */,
-				64A07DE12BFE7CDA00FDE113 /* TimedMessageList.swift */,
-				64A07DE32BFE7CDA00FDE113 /* UntilProcessingCompleteFilter.swift */,
 				64F43E512BFEB06E0069D4F3 /* Assets.xcassets */,
 				64C12FBF2BFEB1F2002D3E7E /* Resources */,
 				64A07DC42BFE7CCB00FDE113 /* Preview Content */,
@@ -169,23 +177,9 @@
 		64A07E0F2BFE9C7E00FDE113 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				64A07E002BFE9C7700FDE113 /* CaptureOverlayView.swift */,
-				8DB8EB4D2C0A5940004F3E19 /* TopOverlayButtons.swift */,
-				8DB8EB4B2C0A46E4004F3E19 /* BottomOverlayButtons.swift */,
-				64A07E012BFE9C7700FDE113 /* CapturePrimaryView.swift */,
 				64A07E022BFE9C7700FDE113 /* ContentView.swift */,
-				64A07E032BFE9C7700FDE113 /* FeedbackView.swift */,
-				64A07E042BFE9C7700FDE113 /* HelpPageView.swift */,
-				8DB8EB4F2C0A601C004F3E19 /* TutorialPageView.swift */,
-				64A07E052BFE9C7700FDE113 /* ModelView.swift */,
-				64A07E062BFE9C7700FDE113 /* OnboardingButtonView.swift */,
-				64A07E072BFE9C7700FDE113 /* OnboardingTutorialView.swift */,
-				64A07E082BFE9C7700FDE113 /* OnboardingView.swift */,
-				64A07E092BFE9C7700FDE113 /* PlayerView.swift */,
-				64A07E0A2BFE9C7700FDE113 /* PrimaryView.swift */,
-				64A07E0B2BFE9C7700FDE113 /* ProgressBarView.swift */,
-				64A07E0C2BFE9C7700FDE113 /* ReconstructionPrimaryView.swift */,
-				64A07E0D2BFE9C7700FDE113 /* TutorialVideoView.swift */,
+				884457A92E26D109008A7123 /* ObjectCapture */,
+				884457AC2E26D22A008A7123 /* Auth */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -209,6 +203,72 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		884457A92E26D109008A7123 /* ObjectCapture */ = {
+			isa = PBXGroup;
+			children = (
+				88ADCFB22E33D3D1005A9908 /* Capture */,
+				64A07E042BFE9C7700FDE113 /* HelpPageView.swift */,
+				64A07E032BFE9C7700FDE113 /* FeedbackView.swift */,
+				8DB8EB4F2C0A601C004F3E19 /* TutorialPageView.swift */,
+				64A07E052BFE9C7700FDE113 /* ModelView.swift */,
+				64A07E062BFE9C7700FDE113 /* OnboardingButtonView.swift */,
+				64A07E072BFE9C7700FDE113 /* OnboardingTutorialView.swift */,
+				64A07E082BFE9C7700FDE113 /* OnboardingView.swift */,
+				64A07E092BFE9C7700FDE113 /* PlayerView.swift */,
+				64A07E0B2BFE9C7700FDE113 /* ProgressBarView.swift */,
+				64A07E0C2BFE9C7700FDE113 /* ReconstructionPrimaryView.swift */,
+				64A07E0D2BFE9C7700FDE113 /* TutorialVideoView.swift */,
+				884457EF2E294BE5008A7123 /* ModelUploadView.swift */,
+			);
+			path = ObjectCapture;
+			sourceTree = "<group>";
+		};
+		884457AA2E26D173008A7123 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				884457ED2E294B27008A7123 /* NetworkService.swift */,
+				884457EB2E294A12008A7123 /* KeyChainService.swift */,
+				884457B02E278EAC008A7123 /* GoogleAuthService.swift */,
+				64A07DCC2BFE7CDA00FDE113 /* AppDataModel.swift */,
+				64A07DCD2BFE7CDA00FDE113 /* CaptureFolderManager.swift */,
+				64A07DD82BFE7CDA00FDE113 /* OnboardingStateMachine.swift */,
+				64A07DE12BFE7CDA00FDE113 /* TimedMessageList.swift */,
+				64A07DE32BFE7CDA00FDE113 /* UntilProcessingCompleteFilter.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		884457AB2E26D19E008A7123 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8DB8EB492C09595F004F3E19 /* AppDataModel+Orbit.swift */,
+				64A07DD12BFE7CDA00FDE113 /* FeedbackMessages.swift */,
+				64A07DD72BFE7CDA00FDE113 /* OnboardingButtonView+LocalizedString.swift */,
+				64A07DDA2BFE7CDA00FDE113 /* OnboardingTutorialView+LocalizedString.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		884457AC2E26D22A008A7123 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				884457A72E26D0A2008A7123 /* LoginView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		88ADCFB22E33D3D1005A9908 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				8DB8EB4B2C0A46E4004F3E19 /* BottomOverlayButtons.swift */,
+				64A07E012BFE9C7700FDE113 /* CapturePrimaryView.swift */,
+				64A07E002BFE9C7700FDE113 /* CaptureOverlayView.swift */,
+				64A07E0A2BFE9C7700FDE113 /* PrimaryView.swift */,
+				8DB8EB4D2C0A5940004F3E19 /* TopOverlayButtons.swift */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
 		BE1581CA0394362733D93FF3 /* LICENSE */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,7 +281,8 @@
 		E916D38D0EF567740965384B /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				CD61D7696BF8262EF4D5A1D7 /* SampleCode.xcconfig */,
+				884457CF2E285989008A7123 /* Debug.xcconfig */,
+				884457D12E2859AD008A7123 /* Release.xcconfig */,
 			);
 			name = Configuration;
 			sourceTree = "<group>";
@@ -271,6 +332,9 @@
 				Base,
 			);
 			mainGroup = 64A07DB22BFE7CCA00FDE113;
+			packageReferences = (
+				884457E62E287E37008A7123 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
 			productRefGroup = 64A07DBC2BFE7CCA00FDE113 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -313,12 +377,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A07DE42BFE7CDA00FDE113 /* OnboardingTutorialView+LocalizedString.swift in Sources */,
+				884457F02E294BE5008A7123 /* ModelUploadView.swift in Sources */,
 				64A07DE52BFE7CDA00FDE113 /* OnboardingStateMachine.swift in Sources */,
 				64A07DE62BFE7CDA00FDE113 /* AppDataModel.swift in Sources */,
 				64A07DE82BFE7CDA00FDE113 /* SelectiVRApp.swift in Sources */,
 				64A07DF22BFE7CDA00FDE113 /* TimedMessageList.swift in Sources */,
 				64A07DF42BFE7CDA00FDE113 /* OnboardingButtonView+LocalizedString.swift in Sources */,
 				64A07E102BFE9E0F00FDE113 /* FeedbackView.swift in Sources */,
+				884457A82E26D0A2008A7123 /* LoginView.swift in Sources */,
 				64A07E112BFE9E0F00FDE113 /* TutorialVideoView.swift in Sources */,
 				8DB8EB502C0A6023004F3E19 /* TutorialPageView.swift in Sources */,
 				64A07E122BFE9E0F00FDE113 /* ProgressBarView.swift in Sources */,
@@ -327,6 +393,7 @@
 				8DB8EB4A2C095965004F3E19 /* AppDataModel+Orbit.swift in Sources */,
 				64A07E152BFE9E0F00FDE113 /* ContentView.swift in Sources */,
 				64A07E162BFE9E0F00FDE113 /* PlayerView.swift in Sources */,
+				884457B12E278EB0008A7123 /* GoogleAuthService.swift in Sources */,
 				64A07E172BFE9E0F00FDE113 /* ModelView.swift in Sources */,
 				8DB8EB4E2C0A5945004F3E19 /* TopOverlayButtons.swift in Sources */,
 				64A07E182BFE9E0F00FDE113 /* CaptureOverlayView.swift in Sources */,
@@ -337,6 +404,8 @@
 				64A07E1C2BFE9E0F00FDE113 /* OnboardingTutorialView.swift in Sources */,
 				64A07E1D2BFE9E0F00FDE113 /* OnboardingButtonView.swift in Sources */,
 				64A07DF52BFE7CDA00FDE113 /* UntilProcessingCompleteFilter.swift in Sources */,
+				884457EC2E294B0B008A7123 /* KeyChainService.swift in Sources */,
+				884457EE2E294B32008A7123 /* NetworkService.swift in Sources */,
 				64A07DF72BFE7CDA00FDE113 /* CaptureFolderManager.swift in Sources */,
 				64A07DF82BFE7CDA00FDE113 /* FeedbackMessages.swift in Sources */,
 			);
@@ -347,7 +416,7 @@
 /* Begin XCBuildConfiguration section */
 		64A07DC72BFE7CCB00FDE113 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD61D7696BF8262EF4D5A1D7 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 884457CF2E285989008A7123 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -412,7 +481,7 @@
 		};
 		64A07DC82BFE7CCB00FDE113 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD61D7696BF8262EF4D5A1D7 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 884457D12E2859AD008A7123 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -470,7 +539,7 @@
 		};
 		64A07DCA2BFE7CCB00FDE113 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD61D7696BF8262EF4D5A1D7 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 884457CF2E285989008A7123 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -484,7 +553,6 @@
 				INFOPLIST_FILE = SelectiVR/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to scan objects.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -506,7 +574,7 @@
 		};
 		64A07DCB2BFE7CCB00FDE113 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CD61D7696BF8262EF4D5A1D7 /* SampleCode.xcconfig */;
+			baseConfigurationReference = 884457D12E2859AD008A7123 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -520,7 +588,6 @@
 				INFOPLIST_FILE = SelectiVR/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to scan objects.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -562,6 +629,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		884457E62E287E37008A7123 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		884457E72E287E37008A7123 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884457E62E287E37008A7123 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		884457E92E287E37008A7123 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 884457E62E287E37008A7123 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 64A07DB32BFE7CCA00FDE113 /* Project object */;
 }

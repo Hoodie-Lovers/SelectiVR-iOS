@@ -387,6 +387,7 @@ private struct AutoCaptureToggle: View {
     var session: ObjectCaptureSession
 
     var body: some View {
+    #if !targetEnvironment(simulator)
         Button(action: {
             session.isAutoCaptureEnabled.toggle()
         }, label: {
@@ -413,5 +414,6 @@ private struct AutoCaptureToggle: View {
             .background(session.isAutoCaptureEnabled ? .white : .clear)
             .cornerRadius(15)
         })
+        #endif
     }
 }
